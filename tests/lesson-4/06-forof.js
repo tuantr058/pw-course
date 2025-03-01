@@ -34,7 +34,7 @@ console.log(arr);
  */
 let str = 'Playwright';
 let arr = [];
-for (char of str) {
+for (let char of str) {
     arr.push(char);
 };
 arr.reverse();
@@ -43,6 +43,7 @@ console.log(arr);
 // 03 - Filter values
 let nums = [0, 1, 2, 3, 1, 2, 4, 5, 8];
 let count = {};
+let result = [];
 
 for (let num of nums) {
     count[num] = (count[num] || 0) + 1;
@@ -50,6 +51,7 @@ for (let num of nums) {
 
 for (let num of nums) {
     if (count[num] === 1) {
-        console.log(num);
+        result.push(num);
     };
 };
+console.log(result);

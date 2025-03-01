@@ -1,7 +1,7 @@
 // 01 - List out object's keys and values
 let student = {'name': 'Alex', 'age': 10};
 for (let stu in student) {
-    console.log(stu, ':', student[stu]);
+    console.log(stu, '=', student[stu]);
 };
 
 // 02 - Find sum of non-string keys
